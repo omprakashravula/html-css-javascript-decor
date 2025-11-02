@@ -1,0 +1,209 @@
+/* Save this as cart.css */
+
+/* --- Global Styles & Variables --- */
+:root {
+    --primary-color: #8B4513; 
+    --secondary-color: #D4AF37;
+    --bg-color: #FFF8F0;
+    --text-color: #333333;
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* --- Cart Page Header --- */
+.cart-header {
+    background: var(--primary-color);
+    color: white;
+    padding: 2rem 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.cart-header h1 {
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* --- Main Content --- */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+/* --- Cart Grid Styling --- */
+.cart-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem; /* Added space below grid */
+}
+
+/* --- Cart Item Card Styling --- */
+.cart-item {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+.cart-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.cart-item-info {
+    padding: 1rem;
+}
+
+.cart-item-info h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.cart-item-info .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin: 0 0 1rem 0;
+}
+
+/* --- Remove Button Styling --- */
+.remove-from-cart-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+}
+
+.remove-from-cart-btn:hover {
+    background: #c0392b;
+    transform: scale(1.1);
+}
+
+/* --- Empty Cart & Clear Button --- */
+.cart-container p {
+    font-size: 1.2rem;
+    color: #777;
+    grid-column: 1 / -1; 
+    text-align: center;
+}
+
+.clear-cart-btn {
+    background: #c0392b;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clear-cart-btn:hover {
+    background: #a93226;
+}
+
+/* **************************************************
+ * QUOTE FORM STYLES
+ **************************************************
+ */
+.quote-form-section {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 2rem 2.5rem;
+    margin-top: 2.5rem; /* Space between clear button and form */
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border-top: 5px solid var(--primary-color);
+}
+
+.quote-form-section h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    margin-top: 0;
+}
+
+.quote-form {
+    max-width: 500px;
+    margin: 1rem auto 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+.form-submit-btn {
+    background: var(--primary-color);
+    color: white; /* <-- This is the fix for the invisible text */
+    border: none;
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.form-submit-btn:hover {
+    background: #6a350f;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--text-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Favorites - Bhavanni Decorations</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="nav.css"> <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="main-nav">
+    <a href="frontpage.html" class="nav-logo">Bhavanni Decorations</a>
+    <ul class="nav-links">
+        <li><a href="frontpage.html">Home</a></li>
+        <li><a href="wedding.html">Wedding Decoration</a></li>
+        <li><a href="mangal-snannam.html">Mangal Snannam</a></li>
+        <li><a href="reception.html">Reception</a></li> <li><a href="birthday.html">Birthday</a></li> <li><a href="about.html">About</a></li>
+        <li>
+            <a href="cart.html" class="active">
+                My Favorites (<span class="cart-counter">0</span>)
+            </a>
+        </li>
+    </ul>
+</nav>
+
+    <header class="cart-header">
+        <h1>Your Favorites</h1>
+    </header>
+
+    <main>
+        <div class="cart-container">
+            </div>
+
+        <button class="clear-cart-btn">Clear All Favorites</button>
+
+        <section class="quote-form-section">
+            <h2>Send Your List to Us!</h2>
+            <p>Ready to get a quote? Fill out your details, and we'll open your email app with this list of items ready to send.</p>
+            
+            <form class="quote-form">
+                <div class="form-group">
+                    <label for="user-name-cart">Your Name:</label>
+                    <input type="text" id="user-name-cart" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="user-contact-cart">Your Phone or Email:</label>
+                    <input type="text" id="user-contact-cart" class="form-input" required>
+                </div>
+                <button type="submit" class="form-submit-btn">Send My Favorites</button>
+            </form>
+        </section>
+        </main>
+
+    <footer>
+        <p>omprakash ravula . All Rights Reserved.</p>
+    </footer>
+
+ <script src="products.js"></script>
+    <script src="mangal-products.js"></script>
+    <script src="receptionproduct.js"></script>
+    
+    <script src="birthdayproduct.js"></script>
+    <script src="cart.js"></script>
+    <script src="form-logic.js"></script>
+</body>
+</html>

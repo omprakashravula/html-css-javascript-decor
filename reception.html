@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reception - Bhavanni Decorations</title>
+    <link rel="stylesheet" href="wedding.css">
+    <link rel="stylesheet" href="nav.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="main-nav">
+        <a href="frontpage.html" class="nav-logo">Bhavanni Decorations</a>
+        <ul class="nav-links">
+            <li><a href="frontpage.html">Home</a></li>
+            <li><a href="wedding.html">Wedding Decoration</a></li>
+            <li><a href="mangal-snannam.html">Mangal Snannam</a></li>
+            <li><a href="reception.html" class="active">Reception</a></li>
+            <li><a href="birthday.html">Birthday</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+                <a href="cart.html">
+                    My Favorites (<span class="cart-counter">0</span>)
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    
+
+    <main>
+        <div id="reception-grid" class="product-grid product-container">
+            </div>
+
+        <section class="quote-form-section">
+            <h2>Get a Quote for Your Favorites</h2>
+            <p>Fill out your details below. When you click "Send," we'll open your email app with a pre-filled message containing all your favorited items.</p>
+            
+            <form class="quote-form">
+                <div class="form-group">
+                    <label for="user-name">Your Name:</label>
+                    <input type="text" id="user-name" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="user-contact">Your Phone or Email:</label>
+                    <input type="text" id="user-contact" class="form-input" required>
+                </div>
+                <button type="submit" class="form-submit-btn">Send My Favorites</button>
+            </form>
+        </section>
+    </main>
+
+    <div class="lightbox-overlay">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-image" src="" alt="Enlarged product">
+    </div>
+
+    <footer>
+        <p>omprakash ravula . All Rights Reserved.</p>
+    </footer>
+
+    <script src="receptionproduct.js"></script> <script src="product-page.js"></script> 
+    
+    <script src="form-logic.js"></script>
+</body>
+</html>

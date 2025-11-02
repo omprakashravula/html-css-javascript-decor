@@ -1,0 +1,107 @@
+/* Save this as about.css */
+
+/* --- Global Styles & Variables --- */
+:root {
+    --primary-color: #8B4513; 
+    --secondary-color: #D4AF37;
+    --bg-color: #FFF8F0;
+    --text-color: #333333;
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* --- Main Content Container --- */
+.about-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* --- Section 1: Owner --- */
+.about-owner {
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Space between photo and bio */
+    padding: 1.5rem;
+}
+
+.owner-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; /* Makes the photo circular */
+    object-fit: cover;
+    border: 5px solid var(--bg-color);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.owner-bio {
+    flex: 1; /* Takes up the remaining space */
+}
+
+.owner-bio h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    margin-top: 0;
+}
+
+.owner-bio p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* --- Section 2: Business --- */
+.about-business {
+    padding: 1.5rem;
+    border-top: 2px dashed #eee;
+    margin-top: 1.5rem;
+}
+
+.about-business h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.about-business p {
+    font-size: 1.1rem;
+    color: #555;
+    /* Justifies the text for a clean, block-like look */
+    text-align: justify; 
+}
+
+
+/* --- Footer --- */
+footer {
+    background-color: var(--text-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* --- Responsive styles for smaller screens --- */
+@media (max-width: 700px) {
+    .about-owner {
+        flex-direction: column; /* Stack photo on top of bio */
+        text-align: center;
+    }
+
+    .owner-photo {
+        width: 200px;
+        height: 200px;
+    }
+}
